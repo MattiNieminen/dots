@@ -47,7 +47,7 @@ git clone https://github.com/MattiNieminen/dots.git
 sudo apt install rxvt-unicode
 ```
 
-### Bspwm
+### Bspwm AKA so long Ubuntu Desktop
 
 ```bash
 sudo apt install bspwm feh rofi
@@ -60,12 +60,9 @@ diff -u /usr/share/doc/bspwm/examples/sxhkdrc ~/workspace/dots/.config/sxhkd/sxh
 # If defaults have not changed, copy.
 # Otherwise copy the examples to this repo and modify them first.
 cp -r ~/workspace/dots/.config/* ~/.config/
-```
+cp ~/workspace/dots/.Xresources ~
+cp ~/workspace/dots/.xinitrc ~
 
-### So long Ubuntu Desktop
-```bash
 sudo systemctl set-default multi-user.target
-echo exec bspwm >> ~/.xinitrc
-chmod +x ~/.xinitrc
 sudo reboot now
 ```
