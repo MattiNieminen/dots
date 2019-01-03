@@ -41,7 +41,7 @@ cd ~/workspace
 git clone https://github.com/MattiNieminen/dots.git
 ```
 
-### Urxvt
+### URxvt
 
 ```bash
 sudo apt install rxvt-unicode

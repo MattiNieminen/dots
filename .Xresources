@@ -17,3 +17,6 @@
 *.color14: #9AEDFE
 *.color7: #BFBFBF
 *.color15: #E6E6E6
+
+URxvt.scrollBar: off
+URxvt*font: xft:Ubuntu Mono:size=16
