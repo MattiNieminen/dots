@@ -33,18 +33,22 @@ git config --global user.email "MattiNieminen@users.noreply.github.com"
 git config --global credential.helper store
 ```
 
-## Clone this repo
-
-```bash
-mkdir ~/workspace
-cd ~/workspace
-git clone https://github.com/MattiNieminen/dots.git
-```
-
 ### URxvt
 
 ```bash
 sudo apt install rxvt-unicode
+```
+
+## Install dotfiles
+
+These steps install required packages and dotfiles itself.
+
+### Clone this repo
+
+```bash
+mkdir -p ~/workspace
+cd ~/workspace
+git clone https://github.com/MattiNieminen/dots.git
 ```
 
 ### Bspwm AKA so long Ubuntu Desktop
