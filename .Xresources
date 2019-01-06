@@ -1,4 +1,7 @@
-! Dracula Xresources palette
+!!
+!! Dracula Xresources palette
+!!
+
 *.foreground: #F8F8F2
 *.background: #282A36
 *.color0: #000000
@@ -18,5 +21,25 @@
 *.color7: #BFBFBF
 *.color15: #E6E6E6
 
+!!
+!! URxvt
+!!
+
+! Do not scroll with output
+URxvt*scrollTtyOutput: false
+
+! Scroll in relation to buffer (with mouse scroll or Shift+Page Up)
+URxvt*scrollWithBuffer: true
+
+! Scroll back to the bottom on keypress
+URxvt*scrollTtyKeypress: true
+
+! Do not show scroll bar
 URxvt.scrollBar: off
-URxvt*font: xft:Ubuntu Mono:size=16
+
+! Font
+URxvt*font: xft:Ubuntu Mono:size=12
+
+! Transparency
+URxvt.transparent: true
+URxvt.shading: 10
