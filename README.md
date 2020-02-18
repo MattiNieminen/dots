@@ -65,8 +65,7 @@ diff -u /usr/share/doc/bspwm/examples/sxhkdrc ~/workspace/dots/.config/sxhkd/sxh
 # Otherwise copy the examples to this repo and modify them first.
 cp -r ~/workspace/dots/.config/* ~/.config/
 cp ~/workspace/dots/.Xresources ~
-cp ~/workspace/dots/.xinitrc ~
 
-sudo systemctl set-default multi-user.target
+# Remember to change into Bspwm from display manager after reboot
 sudo reboot now
 ```

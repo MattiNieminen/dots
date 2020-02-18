@@ -38,7 +38,7 @@ URxvt*scrollTtyKeypress: true
 URxvt.scrollBar: off
 
 ! Font
-URxvt*font: xft:Ubuntu Mono:size=12
+URxvt*font: xft:Ubuntu Mono:size=20
 
 ! Transparency
 URxvt.transparent: true
