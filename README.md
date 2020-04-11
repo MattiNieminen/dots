@@ -1,6 +1,6 @@
 # Dots
 
-Dotfiles and instructions for setting up Ubuntu for development. The core idea
+Dotfiles and instructions for setting up Ubuntu as I like it. The core idea
 is to install only the necessary stuff to host, and put everything else inside
 Docker.
 
@@ -22,21 +22,22 @@ Do these before copying dotfiles.
 ```bash
 sudo apt update
 sudo apt upgrade
+sudo apt autoremove
+# Reboot because Ubuntu
+sudo reboot now
 ```
- 
-### Git
- 
+
+### Packages
 ```bash
-sudo apt install git
+sudo apt install git rxvt-unicode bspwm feh rofi
+```
+
+### Git
+
+```bash
 git config --global user.name "Matti Nieminen"
 git config --global user.email "MattiNieminen@users.noreply.github.com"
 git config --global credential.helper store
-```
-
-### URxvt
-
-```bash
-sudo apt install rxvt-unicode
 ```
 
 ## Install dotfiles
@@ -51,10 +52,9 @@ cd ~/workspace
 git clone https://github.com/MattiNieminen/dots.git
 ```
 
-### Bspwm AKA so long Ubuntu Desktop
+### So long Ubuntu Desktop
 
 ```bash
-sudo apt install bspwm feh rofi
 mkdir -p ~/.config
 
 # Check the diff before copying
@@ -62,10 +62,10 @@ diff -u /usr/share/doc/bspwm/examples/bspwmrc ~/workspace/dots/.config/bspwm/bsp
 diff -u /usr/share/doc/bspwm/examples/sxhkdrc ~/workspace/dots/.config/sxhkd/sxhkdrc
 
 # If defaults have not changed, copy.
-# Otherwise copy the examples to this repo and modify them first.
+# Otherwise sync new default with this repo first.
 cp -r ~/workspace/dots/.config/* ~/.config/
 cp ~/workspace/dots/.Xresources ~
 
-# Remember to change into Bspwm from display manager after reboot
+# Remember to change into Bspwm from GDM after reboot
 sudo reboot now
 ```
