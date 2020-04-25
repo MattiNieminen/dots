@@ -32,6 +32,15 @@ sudo reboot now
 sudo apt install git rxvt-unicode bspwm feh rofi
 ```
 
+### Zsh
+
+```bash
+sudo apt install zsh
+chsh -s $(which zsh)
+```
+
+.zshrc and pure-prompt will be installed with dotfiles.
+
 ### Git
 
 ```bash
@@ -77,6 +86,8 @@ diff -u /usr/share/doc/bspwm/examples/sxhkdrc ~/workspace/dots/.config/sxhkd/sxh
 # Otherwise sync new default with this repo first.
 cp -r ~/workspace/dots/.config/* ~/.config/
 cp ~/workspace/dots/.Xresources ~
+cp -r ~/workspace/dots/.zshrc ~/.zshrc
+cp -r ~/workspace/dots/.zsh ~/.zsh
 
 # Remember to change into Bspwm from GDM after reboot
 sudo reboot now
