@@ -83,11 +83,12 @@ diff -u /usr/share/doc/bspwm/examples/bspwmrc ~/workspace/dots/.config/bspwm/bsp
 diff -u /usr/share/doc/bspwm/examples/sxhkdrc ~/workspace/dots/.config/sxhkd/sxhkdrc
 
 # If defaults have not changed, copy.
-# Otherwise sync new default with this repo first.
+# Otherwise sync new defaults with this repo first.
 cp -r ~/workspace/dots/.config/* ~/.config/
 cp ~/workspace/dots/.Xresources ~
-cp -r ~/workspace/dots/.zshrc ~/.zshrc
-cp -r ~/workspace/dots/.zsh ~/.zsh
+cp -r ~/workspace/dots/.zshrc ~
+cp -r ~/workspace/dots/.zsh ~
+cp -r ~/workspace/dots/.spacemacs ~
 
 # Remember to change into Bspwm from GDM after reboot
 sudo reboot now
