@@ -63,7 +63,7 @@ sudo usermod -aG docker $USER
 
 ## Install dotfiles
 
-These steps install required packages and dotfiles itself.
+These steps will install the dots.
 
 ### Clone this repo
 
