@@ -71,6 +71,8 @@ These steps install required packages and dotfiles itself.
 mkdir -p ~/workspace
 cd ~/workspace
 git clone https://github.com/MattiNieminen/dots.git
+cd dots
+git submodule update --init --recursive
 ```
 
 ### So long Ubuntu Desktop
