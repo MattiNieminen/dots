@@ -92,6 +92,8 @@ cp -r ~/workspace/dots/.zshrc ~
 cp -r ~/workspace/dots/.zsh ~
 cp -r ~/workspace/dots/.spacemacs ~
 
+# Now copy some cool image to ~/.config/wallpaper.jpg
+
 # Remember to change into Bspwm from GDM after reboot
 sudo reboot now
 ```
