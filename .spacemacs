@@ -42,6 +42,7 @@ This function should only modify configuration layer settings."
      markdown
      multiple-cursors
      shell
+     sql
      treemacs
      typescript
      version-control
