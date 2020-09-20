@@ -34,7 +34,7 @@ This function should only modify configuration layer settings."
    dotspacemacs-configuration-layers
    '(
      auto-completion
-     (clojure :variables clojure-fancify-symbols t)
+     (clojure :variables clojure-enable-fancify-symbols t)
      emacs-lisp
      helm
      html
