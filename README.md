@@ -63,7 +63,7 @@ sudo usermod -aG docker $USER
 
 ## Install dotfiles
 
-These steps will install the dots.
+These steps will install the dots and update all submodules.
 
 ### Clone this repo
 
@@ -73,6 +73,18 @@ cd ~/workspace
 git clone https://github.com/MattiNieminen/dots.git
 cd dots
 git submodule update --init --recursive
+```
+
+### Update all submodules
+
+```bash
+cd .zsh/pure
+git checkout main
+git pull
+cd ../..
+# Check the updates in submodule
+git status
+git commit -am "Update submodules"
 ```
 
 ### So long Ubuntu Desktop
