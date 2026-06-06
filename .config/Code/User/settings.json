@@ -1,0 +1,9 @@
+{
+    "workbench.colorTheme": "Shades of Purple",
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    "window.zoomLevel": 2,
+    "editor.formatOnSave": true,
+    "editor.fontFamily": "'JetBrains Mono Nerd Font', monospace"
+}
